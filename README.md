@@ -28,9 +28,18 @@ couple of JSON sidecars. Human-readable, greppable, git-friendly.
 - 📱 Responsive — drawer sidebar and icon toolbar on small screens
 - 🌗 Light/dark theme via a single centralized CSS token file
 
+## Prerequisites
+
+- **Node.js 20+** (22+ recommended — the Docker image uses Node 22)
+- **pnpm 9+** — the repo pins it via the `packageManager` field, so if you have
+  [Corepack](https://nodejs.org/api/corepack.html) (bundled with Node) just run
+  `corepack enable` once and the right version is used automatically.
+  Alternatively: `npm install -g pnpm`
+
 ## Quick start
 
 ```bash
+corepack enable    # or: npm install -g pnpm
 pnpm install
 pnpm dev          # http://localhost:3000 — first visit shows the owner setup form
 pnpm test         # vitest suite (50 tests)

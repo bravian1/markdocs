@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "description": "Google-Docs-style editor for markdown files",
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "pnpm --filter @markdocs/web dev",
     "build": "pnpm -r build",
